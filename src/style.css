@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  background-color: #002a54;
+  height: 100%;
+}
+
+#app {
+  /* max-width: 600px; */
+  margin: 0 auto;
+  padding-top: 10px;
+  text-align: center;
+  background-image: url(https://static.nieuwsblad.be/Assets/Images_Upload/2022/10/20/fotoronde_bg_fade.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #002a54;
+  padding-bottom: 50px;
+  min-height: 100%;
+  position: relative;
+}
+
+/* #container {
+  width: 100%;
+  margin: 0 auto;
+} */
+
+/* LANDINGSPAGE */
+
+.logo {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.intro {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  font-family: 'Roboto', sans-serif;
+  width: 90%;
+  margin: 0 auto 20px auto;
+}
+
+.label_title {
+  color: white;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  color: white;
+  font-weight: 700;
+}
+
+.modal-vue .overlay {
+  position: fixed;
+  z-index: 9998;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-vue .modal {
+  position: absolute;
+  width: 90%;
+  z-index: 9999;
+  left: 5%;
+  top: 5%;
+  height: 90vh;
+  padding: 20px 30px;
+  background-color: #fff;
+  overflow: scroll;
+  text-align: left;
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.modal-vue .close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* QUIZ */
+
+.timer_digits {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.375rem;
+  font-weight: 700;
+}
+.timer_icon {
+  margin-right: 5px;
+  width: 1.375rem;
+}
+.foto {
+  width: 80%;
+  border-radius: 20px;
+  background-color: white;
+  margin-bottom: 10px;
+}
+.input_form {
+  background: white !important;
+  border: 0 !important;
+  outline: none !important;
+  border-radius: 10px !important;
+  width: 80% !important;
+  padding: 15px 10px !important;
+  font-size: 1.4rem !important;
+  color: #000068 !important;
+  text-align: center !important;
+}
+button {
+  background: #f7d611;
+  border: 0;
+  border-radius: 50px;
+  width: 80%;
+  color: #000068;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  padding: 15px 0;
+  font-family: 'Roboto', sans-serif;
+}
+.skip {
+  color: #f7d611;
+  text-decoration: underline;
+}
+.title {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.title_tip {
+  color: white;
+  font-size: 1rem;
+}
+
+.error {
+  color: #f7d611;
+  font-weight: bold;
+}
+
+/* RESULT BULLETS */
+
+#container_result {
+  height: 55px;
+  padding: 10px;
+}
+#result_bullets {
+  display: flex;
+  align-content: space-between;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+.correct {
+  background-color: #00ed36;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.false {
+  background-color: #ed0000;
+  width: 15px;
+  height: 15px;
+  margin: 10px;
+  border-radius: 50%;
+}
+
+/* SHARE */
+
+.share__buttons {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.share__button {
+  background: #f7d611;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  color: #000068;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.correct_answer {
+  background-color: #000068;
+  text-transform: capitalize;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.4rem;
+  padding: 5px 0;
+  margin-bottom: 5px;
+}
